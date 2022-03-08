@@ -1,0 +1,187 @@
+/*ジェネラル決定事項*/
+body {
+  font-family: "Times New Roman";
+}
+
+/* アイコンタグ */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.home-btn {
+  line-height: 65px;
+  padding: 0 25px;
+  display: block;
+  color: white;
+}
+
+/* 見出し-top-wrapper */
+.top-wrapper {
+  padding: 15% 0% 10% 0%;
+  background-image: url("index/index-BG.jpg");
+  /* 背景画像を若干白くする */
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  font-size: 110px;
+  letter-spacing: 5px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.top-wrapper h2 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* 街紹介 - city-wrapper */
+.city-wrapper {
+  height: 500px;
+  padding: 150px 0px 150px 0px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 80px;
+}
+
+.heading h2 {
+  margin: 0px;
+  font-size: 50px;
+}
+
+.heading p {
+  font-size: 25px;
+}
+
+.cities {
+  display: flex;
+  justify-content: center;
+}
+
+.city {
+  width: 25%;
+}
+
+.city-icon {
+  margin: 0px 40px 0px 40px;
+  position: relative;
+
+}
+
+.city-icon-img {
+  width: 100%;
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+
+
+.city-icon-img:hover {
+  opacity: 0.85;
+}
+
+.city-icon-text {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+
+.city-icon-img:hover+.city-icon-text, .city-icon-text:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+.txt-contents {
+  text-align: left;
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: black;
+}
+
+/* インスタ */
+.instagram-wrapper {
+  padding: 150px 0px 150px 0px;
+  text-align: center;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+}
+
+.account img {
+  width: 100px;
+  align-self: flex-start;
+}
+
+.account p {
+  font-size: 30px;
+  margin-left: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+
+.account p:hover {
+  opacity: 0.5;
+}
+
+
+/* フッター */
+footer p {
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+}
